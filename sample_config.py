@@ -29,9 +29,7 @@ class Config(object):
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
-    UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/vmserver/he_he"
-    )
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/vmserver/he_he")
     # External plugins repo
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "no") and not url(EXTERNAL_REPO):
